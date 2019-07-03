@@ -158,8 +158,8 @@ Find the control using JavaScript.
 Replace the content of the control.
 Note: This is a workaround. Behavior of text control may change between releases.
 
-## How do you queue events or messages?
+## How do you handle a stream of messages or events?
 
 Use cases: listening for events that fire multiple times or streaming data over a custom protocol.
 Use DataQueue pattern.
-Actually should use Writeable Stream and polyfill: https://streams.spec.whatwg.org/#example-ws-no-backpressure
+Actually should use Readable Stream and polyfill: https://streams.spec.whatwg.org/#example-rs-push-no-backpressure
